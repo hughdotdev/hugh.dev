@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Newspaper, Camera, Github, Link as LinkIcon, Check, Sun, Moon } from 'lucide-react';
+import { Newspaper, Image, Github, Link as LinkIcon, Check, Sun, Moon } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { Background } from '@/components/atoms/background';
@@ -65,7 +65,7 @@ export default function Home() {
             aria-label="Photos"
             className="opacity-60 hover:opacity-100 transition-opacity"
           >
-            <Camera size={19.2} strokeWidth={1.5} />
+            <Image size={19.2} strokeWidth={1.5} />
           </Link>
           
           <a 
