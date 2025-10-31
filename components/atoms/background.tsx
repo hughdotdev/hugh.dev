@@ -17,7 +17,7 @@ const Background = ({
 
 	return (
 		<div
-			className={cn('absolute inset-0 z-[-10] size-full', maskClass, className)}
+			className={cn('fixed inset-0 z-[-10] size-full', maskClass, className)}
 			style={{
 				backgroundImage,
 				backgroundSize,

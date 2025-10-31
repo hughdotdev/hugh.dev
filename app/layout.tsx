@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Background } from "@/components/atoms/background";
 import { Header } from "@/components/organisms/header";
+import { Footer } from "@/components/organisms/footer";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const robotoCondensed = Roboto_Condensed({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-roboto-condensed",
 });
 
 export const metadata: Metadata = {
@@ -23,13 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} font-sans antialiased`}
+        className={`${inter.variable} ${robotoCondensed.variable} font-sans antialiased`}
         style={{ fontFamily: 'var(--font-inter)' }}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Background />
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -122,3 +122,171 @@
     @apply bg-background text-foreground;
   }
 }
+
+.markdown-content {
+  line-height: 1.65;
+  color: oklch(from var(--foreground) l c h / 0.65);
+}
+
+.markdown-content h1 {
+  @apply mb-8 mt-0;
+  font-size: 1.875rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.markdown-content h2 {
+  @apply mb-4 mt-10;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.markdown-content h3 {
+  @apply mb-3 mt-8;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.markdown-content p {
+  @apply mb-6;
+}
+
+.markdown-content strong {
+  font-weight: inherit;
+  color: var(--foreground);
+}
+
+.markdown-content a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: oklch(from var(--foreground) l c h / 0.25);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.markdown-content a:hover {
+  text-decoration-color: var(--foreground);
+}
+
+.markdown-content a.magic-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none !important;
+  background: #8882;
+  transform: translateY(3px);
+  line-height: 100%;
+  color: var(--foreground) !important;
+  border-width: 0px !important;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.375rem;
+  font-family: var(--font-roboto-condensed), 'Roboto Condensed', sans-serif;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+.markdown-content a.magic-link:hover {
+  background: #8883;
+}
+
+.markdown-content a.magic-link .magic-link-icon {
+  display: inline-block;
+  height: 1.05em;
+  width: 1.05em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  @apply mb-6;
+  list-style: none;
+  padding-left: 0;
+}
+
+.markdown-content li {
+  @apply mb-2 pl-6;
+  position: relative;
+}
+
+.markdown-content li::before {
+  content: "−";
+  position: absolute;
+  left: 0;
+  color: oklch(from var(--foreground) l c h / 0.4);
+}
+
+.markdown-content img:not(.magic-link-icon) {
+  @apply rounded-lg my-8 w-full;
+}
+
+.markdown-content code {
+  @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.markdown-content pre {
+  @apply bg-muted p-4 rounded-lg overflow-x-auto mb-6;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent p-0;
+}
+
+.markdown-content hr {
+  border: none;
+  border-top: 1px solid oklch(from var(--foreground) l c h / 0.15);
+  margin: 2rem 0;
+  max-width: 12rem;
+}
+
+.footer-text {
+  color: oklch(from var(--foreground) l c h / 0.65);
+}
+
+.footer-link {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: oklch(from var(--foreground) l c h / 0.25);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.footer-link:hover {
+  text-decoration-color: var(--foreground);
+}
+
+.link-with-tooltip {
+  position: relative;
+}
+
+.link-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease 0.1s, transform 0.1s ease 0.1s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid oklch(from var(--foreground) l c h / 0.1);
+  z-index: 1000;
+}
+
+.link-with-tooltip:hover .link-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
