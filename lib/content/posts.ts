@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 
 const POSTS_DIR = 'content/posts';
+const WORDS_PER_MINUTE = 200;
 
 export interface PostMetadata {
   slug: string;
@@ -16,20 +17,16 @@ export interface Post extends PostMetadata {
 }
 
 function calculateReadingTime(content: string): number {
-  const wordsPerMinute = 200;
   const words = content.trim().split(/\s+/).length;
-  return Math.ceil(words / wordsPerMinute);
+  return Math.ceil(words / WORDS_PER_MINUTE);
 }
 
 export function getAllPosts(): PostMetadata[] {
   const postsDirectory = path.join(process.cwd(), POSTS_DIR);
-  
-  if (!fs.existsSync(postsDirectory)) {
-    return [];
-  }
+  if (!fs.existsSync(postsDirectory)) return [];
 
   const fileNames = fs.readdirSync(postsDirectory);
-  const posts = fileNames
+  return fileNames
     .filter((fileName) => fileName.endsWith('.md') && fileName !== 'index.md')
     .map((fileName) => {
       const slug = fileName.replace(/\.md$/, '');
@@ -44,21 +41,13 @@ export function getAllPosts(): PostMetadata[] {
         readingTime: calculateReadingTime(content),
       };
     })
-    .sort((a, b) => {
-      // Sort by date, newest first
-      return new Date(b.date).getTime() - new Date(a.date).getTime();
-    });
-
-  return posts;
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export function getPostBySlug(slug: string): Post | null {
   const postsDirectory = path.join(process.cwd(), POSTS_DIR);
   const fullPath = path.join(postsDirectory, `${slug}.md`);
-
-  if (!fs.existsSync(fullPath)) {
-    return null;
-  }
+  if (!fs.existsSync(fullPath)) return null;
 
   const fileContents = fs.readFileSync(fullPath, 'utf-8');
   const { data, content } = matter(fileContents);

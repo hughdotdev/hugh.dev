@@ -3,12 +3,10 @@ import { renderMarkdown } from '@/lib/markdown';
 import { MarkdownRenderer } from '@/components/markdown/markdown-renderer';
 
 export default function CraftsPage() {
-  const rawContent = readContentFile('crafts/index.md');
-  const htmlContent = renderMarkdown(rawContent);
-
+  const content = renderMarkdown(readContentFile('crafts/index.md'));
   return (
     <main className="max-w-2xl mx-auto px-4 pb-8">
-      <MarkdownRenderer content={htmlContent} />
+      <MarkdownRenderer content={content} />
     </main>
   );
 }

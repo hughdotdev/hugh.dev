@@ -1,4 +1,6 @@
-export function calculateAge(birthDate: Date): number {
+const BIRTH_DATE = new Date(2008, 10, 18);
+
+function calculateAge(birthDate: Date): number {
   const today = new Date();
   let age = today.getFullYear() - birthDate.getFullYear();
   const monthDiff = today.getMonth() - birthDate.getMonth();
@@ -9,8 +11,6 @@ export function calculateAge(birthDate: Date): number {
   
   return age;
 }
-
-export const BIRTH_DATE = new Date(2008, 10, 18);
 
 export function getCurrentAge(): number {
   return calculateAge(BIRTH_DATE);

@@ -3,9 +3,7 @@ import { renderMarkdown } from '@/lib/markdown';
 import { MarkdownRenderer } from '@/components/markdown/markdown-renderer';
 
 export function PostsEmpty() {
-  const rawContent = readContentFile('posts/index.md');
-  const htmlContent = renderMarkdown(rawContent);
-
-  return <MarkdownRenderer content={htmlContent} />;
+  const content = renderMarkdown(readContentFile('posts/index.md'));
+  return <MarkdownRenderer content={content} />;
 }
 

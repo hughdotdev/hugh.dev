@@ -1,10 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useCallback } from 'react';
-import { 
-  TOOLTIP_CLASS,
-  TOOLTIP_ELEMENT_CLASS
-} from '@/lib/markdown';
+import { TOOLTIP_CLASS, TOOLTIP_ELEMENT_CLASS } from '@/lib/markdown';
 
 interface MarkdownRendererProps {
   content: string;
@@ -12,7 +9,6 @@ interface MarkdownRendererProps {
 
 function getTokyoTime(): string {
   const now = new Date();
-  
   return new Intl.DateTimeFormat('en-US', {
     timeZone: 'Asia/Tokyo',
     hour: '2-digit',
@@ -25,12 +21,9 @@ function processTooltipLinks(container: HTMLElement) {
   const normalLinks = container.querySelectorAll('a:not(.magic-link)');
   
   normalLinks.forEach((link) => {
-    if (link.classList.contains(TOOLTIP_CLASS)) {
-      return;
-    }
+    if (link.classList.contains(TOOLTIP_CLASS)) return;
     
     const title = link.getAttribute('title');
-    
     if (title && (title.startsWith('http') || title.startsWith('/'))) {
       link.classList.add(TOOLTIP_CLASS);
       
@@ -49,7 +42,6 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
 
   const processContent = useCallback(() => {
     if (!containerRef.current) return;
-    
     processTooltipLinks(containerRef.current);
   }, []);
 
@@ -63,16 +55,13 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
       
       const timeElements = containerRef.current.querySelectorAll('[data-tokyo-time]');
       const currentTime = getTokyoTime();
-      
       timeElements.forEach((element) => {
         element.textContent = currentTime;
       });
     };
 
     updateTokyoTime();
-
     const interval = setInterval(updateTokyoTime, 1000);
-
     return () => clearInterval(interval);
   }, [content]);
 

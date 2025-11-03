@@ -1,3 +1,3 @@
-export { calculateAge, getCurrentAge, BIRTH_DATE } from './age';
+export { getCurrentAge } from './age';
 export { formatDate } from './format';
 

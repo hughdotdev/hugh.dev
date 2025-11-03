@@ -4,9 +4,3 @@ export interface MagicLinkData {
   darkIconUrl?: string | null;
 }
 
-export interface MarkdownConfig {
-  html: boolean;
-  linkify: boolean;
-  typographer: boolean;
-}
-

@@ -8,7 +8,3 @@ export function readContentFile(filename: string): string {
   return fs.readFileSync(filePath, 'utf-8');
 }
 
-export function getContentPath(filename: string): string {
-  return path.join(process.cwd(), CONTENT_DIR, filename);
-}
-

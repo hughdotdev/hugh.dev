@@ -5,27 +5,19 @@ import { formatDate } from '@/lib/time';
 import { notFound } from 'next/navigation';
 
 interface PostPageProps {
-  params: Promise<{
-    slug: string;
-  }>;
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
 export default async function PostPage({ params }: PostPageProps) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
+  if (!post) notFound();
 
-  if (!post) {
-    notFound();
-  }
-
-  const htmlContent = renderMarkdown(post.content);
+  const content = renderMarkdown(post.content);
 
   return (
     <main className="max-w-2xl mx-auto px-4 pb-8">
@@ -36,7 +28,7 @@ export default async function PostPage({ params }: PostPageProps) {
             {formatDate(post.date, { format: 'long' })} · {post.readingTime} min read
           </div>
         </header>
-        <MarkdownRenderer content={htmlContent} />
+        <MarkdownRenderer content={content} />
       </article>
     </main>
   );
