@@ -20,6 +20,21 @@ const robotoCondensed = Roboto_Condensed({
 export const metadata: Metadata = {
   title: "Hugh Fabre",
   description: "Solo web developer building a better web",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+    },
+  },
+  other: {
+    'robots': 'noai, noimageai',
+    'googlebot': 'noarchive',
+    'googlebot-news': 'nosnippet',
+  },
 };
 
 export default function RootLayout({
