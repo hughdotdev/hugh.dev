@@ -1,11 +1,9 @@
 import { Background } from "@/components/atoms/background";
-import { WappalyzerSpoofer } from "@/components/atoms/wappalyzer-spoofer";
 import { Footer } from "@/components/organisms/footer";
 import { Header } from "@/components/organisms/header";
 import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
-import Script from "next/script";
 import "./globals.css";
 
 const satoshi = localFont({
@@ -98,15 +96,7 @@ export default function RootLayout({
         className={`${satoshi.variable} ${archivoNarrow.variable} font-sans antialiased`}
         style={{ fontFamily: "var(--font-satoshi)", fontWeight: "500" }}
       >
-        <Script
-          id="wappalyzer-obfuscation"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `(function(){if(typeof window!=='undefined'){try{Object.defineProperty(window,'__REACT_DEVTOOLS_GLOBAL_HOOK__',{value:undefined,writable:false,configurable:false});}catch(e){}}})();`,
-          }}
-        />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <WappalyzerSpoofer />
           <Background />
           <Header />
           {children}
