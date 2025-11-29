@@ -18,7 +18,7 @@ export const Footer = memo(function Footer() {
   return (
     <footer className="max-w-2xl mx-auto px-4 py-6">
       {isNotHomePage && (
-        <p className="mb-4 text-sm font-mono footer-text">
+        <p className="mb-4 text-sm footer-text" style={{ fontFamily: "var(--font-satoshi)" }}>
           <Link href="/" className="footer-link">
             $ cd ~
           </Link>{" "}

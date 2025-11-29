@@ -12,11 +12,13 @@ I'm a **{{age}} y/o web developer** living in **Tokyo**. It's **{{time}}** right
 
 I'm half **Aussie** and half **Japanese**, a bilingual. So I can do some **localization jobs**.
 
-I mostly work with [[[Next.js::https://nextjs.org/favicon.ico]]](https://nextjs.org/) , [[[Tailwind CSS::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/tailwindcss.svg]]](https://tailwindcss.com/) and [[[TypeScript::https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/typescript.svg]]](https://www.typescriptlang.org/).
+I mostly work with [[[Next.js::https://g5lp1abfa6.ufs.sh/f/6KdjywPidJK3XJJJdFfmu5j7rLByRbVMZEd0FYvhlzk6i1JA]]](https://nextjs.org/) , [[[Tailwind CSS::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/tailwindcss.svg]]](https://tailwindcss.com/) and [[[TypeScript::https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/typescript.svg]]](https://www.typescriptlang.org/).
 
-I like to dabble in backend development with [[[Rust::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/rust.svg]]](https://rust-lang.org/) , [[[Go::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/go.svg]]](https://go.dev/).
+I like to dabble in backend development with [[[Rust::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/rust.svg]]](https://rust-lang.org/) , [[[Go::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/go.svg]]](https://go.dev/) , [[[PHP::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/php.svg]]](https://php.net/).
 
 I also play around with [[[Python::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/python.svg]]](https://python.org/) , [[[Nim::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/nim.svg]]](https://nim-lang.org/) , [[[Julia::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/julia.svg]]](https://julialang.org/) , [[[Zig::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/zig.svg]]](https://ziglang.org/) for fun.
+
+I also make Minecraft mods with [[[Java::https://g5lp1abfa6.ufs.sh/f/6KdjywPidJK3XJex7PQmu5j7rLByRbVMZEd0FYvhlzk6i1JA]]](https://www.java.com/) and [[[Fabric::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/minecraft-fabric.svg]]](https://fabricmc.net/).
 
 ## When I'm away from the keyboard
 
