@@ -16,6 +16,8 @@ I mostly work with [[[Next.js::https://nextjs.org/favicon.ico]]](https://nextjs.
 
 I like to dabble in backend development with [[[Rust::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/rust.svg]]](https://rust-lang.org/) , [[[Go::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/go.svg]]](https://go.dev/).
 
+I also play around with [[[Python::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/python.svg]]](https://python.org/) , [[[Nim::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/nim.svg]]](https://nim-lang.org/) , [[[Julia::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/julia.svg]]](https://julialang.org/) , [[[Zig::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/zig.svg]]](https://ziglang.org/) for fun.
+
 ## When I'm away from the keyboard
 
 When I'm logged out, I listen to a bunch of **music**.
