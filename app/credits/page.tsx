@@ -213,7 +213,7 @@ export default function CreditsPage() {
             <span className="dark">
               <Kbd keys={["ESC"]} active={isHolding} className="text-base" />
             </span>
-            <span>for 1s to exit</span>
+            <span>to exit</span>
           </div>
           <button
             onClick={toggleMute}
