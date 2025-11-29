@@ -80,7 +80,7 @@ export const Header = memo(function Header() {
           <span className="text-lg font-medium">Hugh Fabre</span>
         </Link>
 
-        <nav className="flex items-center gap-5">
+        <nav className="flex items-center gap-3 md:gap-5">
           <Link
             href="/posts"
             aria-label="Posts"
