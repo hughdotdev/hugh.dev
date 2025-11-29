@@ -149,7 +149,7 @@ export default function CreditsPage() {
           <div className={styles.spacerMd} />
 
           <h1 className={styles.title}>HUGH.DEV</h1>
-          <p className={styles.subtitle}>A Hugh Fabre Film</p>
+          <p className={styles.subtitle}>A Hugh Fabre Website</p>
           <div className={styles.spacerLg} />
 
           <section className={styles.section}>
