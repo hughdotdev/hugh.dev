@@ -1,6 +1,6 @@
-# No crafts yet
+# Crafts
 
-Check back soon for new content.
+I don't have many crafts yet, but check out the [credits](/crafts/credits) page if you're interested!
 
 ## What you can do
 
