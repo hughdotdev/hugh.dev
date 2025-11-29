@@ -1,6 +1,6 @@
 import { PostListItem } from "@/components/posts/post-list-item";
 import { PostsEmpty } from "@/components/posts/posts-empty";
-import { getAllPosts } from "@/lib/content/posts";
+import { getAllPosts } from "@/lib/content";
 import { Suspense } from "react";
 
 export const dynamic = "force-static";

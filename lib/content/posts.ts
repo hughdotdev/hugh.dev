@@ -22,7 +22,7 @@ function calculateReadingTime(content: string): number {
   return Math.ceil(words / WORDS_PER_MINUTE);
 }
 
-const getAllPostsInternal = (): PostMetadata[] => {
+export const getAllPosts = cache((): PostMetadata[] => {
   const postsDirectory = path.join(process.cwd(), POSTS_DIR);
   if (!fs.existsSync(postsDirectory)) return [];
 
@@ -43,13 +43,9 @@ const getAllPostsInternal = (): PostMetadata[] => {
       };
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-};
-
-export const getAllPosts = cache((): PostMetadata[] => {
-  return getAllPostsInternal();
 });
 
-const getPostBySlugInternal = (slug: string): Post | null => {
+export const getPostBySlug = cache((slug: string): Post | null => {
   const postsDirectory = path.join(process.cwd(), POSTS_DIR);
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   if (!fs.existsSync(fullPath)) return null;
@@ -64,8 +60,4 @@ const getPostBySlugInternal = (slug: string): Post | null => {
     readingTime: calculateReadingTime(content),
     content,
   };
-};
-
-export const getPostBySlug = cache((slug: string): Post | null => {
-  return getPostBySlugInternal(slug);
 });

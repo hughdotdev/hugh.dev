@@ -5,7 +5,7 @@ import {
 } from "./constants";
 import type { MagicLinkData } from "./types";
 
-function parseMagicLinkContent(content: string): MagicLinkData {
+export function parseMagicLinkContent(content: string): MagicLinkData {
   const match = content.match(MAGIC_LINK_PATTERN);
   if (!match) return { text: content, iconUrl: null };
 
@@ -17,15 +17,15 @@ function parseMagicLinkContent(content: string): MagicLinkData {
   };
 }
 
-function getDefaultIconUrl(domain: string): string {
-  return `${FAVICON_BASE_URL}?domain=${domain}&sz=${FAVICON_SIZE}`;
-}
-
-function extractDomain(url: string): string {
+export function extractDomain(url: string): string {
   return url.replace(/^https?:\/\//, "").split("/")[0];
 }
 
-function createMagicLinkHtml(
+export function getDefaultIconUrl(domain: string): string {
+  return `${FAVICON_BASE_URL}?domain=${domain}&sz=${FAVICON_SIZE}`;
+}
+
+export function createMagicLinkHtml(
   iconUrl: string,
   text: string,
   darkIconUrl?: string
@@ -35,10 +35,3 @@ function createMagicLinkHtml(
   }
   return `<span class="magic-link-icon" style="background-image: url('${iconUrl}');"></span>${text}`;
 }
-
-export {
-  createMagicLinkHtml,
-  extractDomain,
-  getDefaultIconUrl,
-  parseMagicLinkContent,
-};

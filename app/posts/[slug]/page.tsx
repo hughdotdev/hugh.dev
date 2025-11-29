@@ -1,5 +1,5 @@
 import { MarkdownRenderer } from "@/components/markdown/markdown-renderer";
-import { getAllPosts, getPostBySlug } from "@/lib/content/posts";
+import { getPostBySlug, getAllPosts } from "@/lib/content";
 import { renderMarkdown } from "@/lib/markdown";
 import { formatDate } from "@/lib/time";
 import { notFound } from "next/navigation";

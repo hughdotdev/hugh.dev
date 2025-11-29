@@ -5,7 +5,7 @@ type BackgroundProps = React.ComponentProps<"div"> & {
   size?: number;
 };
 
-const Background = memo(function Background({
+export const Background = memo(function Background({
   size = 24,
   className,
   style,
@@ -28,6 +28,3 @@ const Background = memo(function Background({
     />
   );
 });
-
-Background.displayName = "Background";
-export { Background };

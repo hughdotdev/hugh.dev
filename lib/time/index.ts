@@ -1,2 +1,2 @@
 export { getCurrentAge } from "./age";
-export { formatDate } from "./format";
+export { formatDate, getTokyoTime } from "./format";

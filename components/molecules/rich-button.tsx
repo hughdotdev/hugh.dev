@@ -98,7 +98,7 @@ const sizeMap: Record<SizeVariant, string> = {
   lg: "h-10 rounded-md px-6 text-base",
 };
 
-const RichButton = React.forwardRef<HTMLButtonElement, RichButtonProps>(
+export const RichButton = React.forwardRef<HTMLButtonElement, RichButtonProps>(
   (
     {
       children,
@@ -154,5 +154,3 @@ const RichButton = React.forwardRef<HTMLButtonElement, RichButtonProps>(
 );
 
 RichButton.displayName = "RichButton";
-
-export { RichButton };

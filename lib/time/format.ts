@@ -13,3 +13,12 @@ export function formatDate(
     day: "numeric",
   }).format(date);
 }
+
+export function getTokyoTime(): string {
+  return new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Tokyo",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(new Date());
+}

@@ -1,16 +1,8 @@
 import { MarkdownRenderer } from "@/components/markdown/markdown-renderer";
 import { readContentFile, replaceTemplateVariables } from "@/lib/content";
 import { renderMarkdown } from "@/lib/markdown";
-import { getCurrentAge } from "@/lib/time";
+import { getCurrentAge, getTokyoTime } from "@/lib/time";
 import { Suspense } from "react";
-
-const getTokyoTime = (): string =>
-  new Intl.DateTimeFormat("en-US", {
-    timeZone: "Asia/Tokyo",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-  }).format(new Date());
 
 export const dynamic = "force-static";
 export const revalidate = 3600;

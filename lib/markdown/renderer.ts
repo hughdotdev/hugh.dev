@@ -50,7 +50,6 @@ function setupRenderers(md: MarkdownIt) {
   md.renderer.rules.text = (tokens, idx) => {
     const token = tokens[idx];
     const content = token.content;
-
     const match = content.match(MAGIC_LINK_PATTERN);
 
     if (match) {
