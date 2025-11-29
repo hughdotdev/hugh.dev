@@ -200,7 +200,8 @@
   }
 }
 
-.muteButton {
+.muteButtonDesktop,
+.muteButtonMobile {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,8 +213,31 @@
   transition: color 0.2s;
 }
 
-.muteButton:hover {
+.muteButtonDesktop:hover,
+.muteButtonMobile:hover {
   color: rgba(255, 255, 255, 0.9);
+}
+
+.muteButtonDesktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .muteButtonDesktop {
+    display: flex;
+  }
+}
+
+.controlsMobileRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .controlsMobileRow {
+    display: none;
+  }
 }
 
 .controlsLinkMobile {
@@ -221,7 +245,6 @@
   color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
   transition: color 0.2s;
-  display: block;
   line-height: 1.5rem;
 }
 
@@ -229,8 +252,12 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+.muteButtonMobile {
+  display: flex;
+}
+
 @media (min-width: 768px) {
-  .controlsLinkMobile {
+  .muteButtonMobile {
     display: none;
   }
 }

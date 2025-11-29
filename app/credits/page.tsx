@@ -217,15 +217,24 @@ export default function CreditsPage() {
           </div>
           <button
             onClick={toggleMute}
-            className={styles.muteButton}
+            className={styles.muteButtonDesktop}
             aria-label={isMuted ? "Unmute" : "Mute"}
           >
             {isMuted ? <VolumeOff size={20} /> : <Volume2 size={20} />}
           </button>
         </div>
-        <Link href="/" className={styles.controlsLinkMobile}>
-          Click here to exit
-        </Link>
+        <div className={styles.controlsMobileRow}>
+          <Link href="/" className={styles.controlsLinkMobile}>
+            Click here to exit
+          </Link>
+          <button
+            onClick={toggleMute}
+            className={styles.muteButtonMobile}
+            aria-label={isMuted ? "Unmute" : "Mute"}
+          >
+            {isMuted ? <VolumeOff size={20} /> : <Volume2 size={20} />}
+          </button>
+        </div>
       </div>
     </div>
   );
