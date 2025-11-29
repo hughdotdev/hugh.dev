@@ -80,7 +80,7 @@ export const Header = memo(function Header() {
           </Link>
 
           <a
-            href="https://github.com/hughfabre"
+            href="https://github.com/hughdotdev"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

@@ -41,14 +41,14 @@ const archivoNarrow = localFont({
 export const metadata: Metadata = {
   title: "Hugh Fabre",
   description: "A solo web engineer.",
-  metadataBase: new URL("https://hughfabre.dev"),
+  metadataBase: new URL("https://hugh.dev"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hughfabre.dev",
+    url: "https://hugh.dev",
     title: "Hugh Fabre",
     description: "A solo web engineer.",
     siteName: "Hugh Fabre",

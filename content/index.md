@@ -34,8 +34,8 @@ I also follow [Formula 1](https://formula1.com/), [English Premier League](https
 
 ## Ping me on
 
-- [GitHub](https://github.com/hughfabre/)
+- [GitHub](https://github.com/hughdotdev/)
 - [Discord](https://discord.com/users/924311449973686282/)
 - [Instagram](https://instagram.com/humgruffin39/)
 
-Or email me at [me@hughfabre.dev](mailto:me@hughfabre.dev)
+Or email me at [me@hugh.dev](mailto:me@hugh.dev)
