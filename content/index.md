@@ -20,7 +20,7 @@ I like to dabble in backend development with [[[Rust::https://raw.githubusercont
 
 When I'm logged out, I listen to a bunch of **music**.
 
-My favoutite bands are [Weezer](https://rateyourmusic.com/artist/weezer/ "https://t2.genius.com/unsafe/952x0/https%3A%2F%2Fimages.genius.com%2F27b4a6db5614e145e59aa365c07381e3.1000x1000x1.png"), [Failure](https://rateyourmusic.com/artist/failure/ "https://t2.genius.com/unsafe/952x0/https%3A%2F%2Fimages.genius.com%2F221dcd2eb9db1c96937b521d5b098c05.640x640x1.jpg"), [Sunny Day Real Estate](https://rateyourmusic.com/artist/sunny-day-real-estate/ "https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F9fdf95b19ff7a384a2541685e61a00e9.1000x1000x1.png"), etc.
+My favourite bands are [Weezer](https://rateyourmusic.com/artist/weezer/ "https://t2.genius.com/unsafe/952x0/https%3A%2F%2Fimages.genius.com%2F27b4a6db5614e145e59aa365c07381e3.1000x1000x1.png"), [Failure](https://rateyourmusic.com/artist/failure/ "https://t2.genius.com/unsafe/952x0/https%3A%2F%2Fimages.genius.com%2F221dcd2eb9db1c96937b521d5b098c05.640x640x1.jpg"), [Sunny Day Real Estate](https://rateyourmusic.com/artist/sunny-day-real-estate/ "https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F9fdf95b19ff7a384a2541685e61a00e9.1000x1000x1.png"), etc.
 
 I also watch a lot of **movies** in my free time.
 
