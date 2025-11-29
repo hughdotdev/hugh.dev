@@ -54,11 +54,18 @@ const CAST_ROLES = [
 ];
 
 const SPECIAL_THANKS = [
-  "Hugh Fabre",
-  "Coffee",
-  "Late Nights",
-  "Stack Overflow",
-  "You, for watching",
+  "Tommy, for the UI components",
+  "Caffeine, for the long nights",
+  "Stack Overflow, for the answers",
+  "Claude Opus 4.5, for the help",
+  "React, for the UI",
+  "Next.js, for the framework",
+  "Tailwind CSS, for the styles",
+  "TypeScript, for the types",
+  "Git, for the version control",
+  "GitHub, for the repository",
+  "VSCodium, for the editor",
+  "You, for visiting",
 ];
 
 function useEscapeHold(onComplete: () => void) {
