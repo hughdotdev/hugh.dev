@@ -18,7 +18,7 @@
   align-items: center;
   text-align: center;
   padding: 0 2rem;
-  animation: scroll 80s linear forwards;
+  animation: scroll 81s linear forwards;
 }
 
 @keyframes scroll {
