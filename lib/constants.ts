@@ -13,3 +13,4 @@ export const LINKS = {
   emailLink: "mailto:me@hugh.dev",
 } as const;
 
+export const LICENSE_NAME = "MIT License" as const;

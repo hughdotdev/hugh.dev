@@ -1,6 +1,6 @@
 "use client";
 
-import { LINKS } from "@/lib/constants";
+import { LINKS, LICENSE_NAME } from "@/lib/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { memo, useMemo } from "react";
@@ -36,7 +36,7 @@ export const Footer = memo(function Footer() {
           rel="noopener noreferrer"
           className="footer-link"
         >
-          MIT License
+          {LICENSE_NAME}
         </a>{" "}
         | 2025-PRESENT © Hugh Fabre
       </p>
