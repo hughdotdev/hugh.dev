@@ -47,7 +47,7 @@ const CAST_ROLES = [
   "Arthur Fleck",
   "Tyler Durden",
   "Vincent Freeman",
-  'Louis "Lou" Bloom',
+  "Louis Bloom",
   "Donnie Darko",
   "Mark Renton",
 ];
