@@ -4,7 +4,7 @@ import { Header } from "@/components/organisms/header";
 import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
