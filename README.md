@@ -1,5 +1,5 @@
 A solo web engineer.
-Find out more via my [portfolio](https://hughfabre.dev/).
+Find out more via my [portfolio](https://hugh.dev/).
 
 ## Languages
 
