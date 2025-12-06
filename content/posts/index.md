@@ -2,7 +2,7 @@
 
 Check back soon for new content.
 
-## What you can do
+### What you can do
 
 - Go back to the [home page](/)
 - Browse my [crafts](/crafts)

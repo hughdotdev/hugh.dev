@@ -4,7 +4,7 @@ Not found.
 
 You might have mistyped the URL, or the page has been moved.
 
-## What you can do
+### What you can do
 
 - Go back to the [home page](/)
 - Check out my [posts](/posts)

@@ -6,7 +6,7 @@ Right now, I'm working at (ahem...) nothing — I mean I'm **open to work** :)
 
 I don't have a specific project, but I'm an **active open source contributor**.
 
-## About me
+### About me
 
 I'm a **{{age}} y/o web developer** living in **Tokyo**. It's **{{time}}** right now here.
 
@@ -20,7 +20,7 @@ I also play around with [[[Python::https://raw.githubusercontent.com/material-ex
 
 I also make Minecraft mods with [[[Java::https://g5lp1abfa6.ufs.sh/f/6KdjywPidJK3XJex7PQmu5j7rLByRbVMZEd0FYvhlzk6i1JA]]](https://www.java.com/) and [[[Fabric::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/minecraft-fabric.svg]]](https://fabricmc.net/).
 
-## When I'm away from the keyboard
+### When I'm away from the keyboard
 
 When I'm logged out, I listen to a bunch of **music**.
 
@@ -36,7 +36,7 @@ Feel free to check out my photos on [Instagram]({{instagram}}).
 
 I also follow [Formula 1](https://formula1.com/), [English Premier League](https://www.premierleague.com/en/), [National Football League](https://www.nfl.com/international/).
 
-## Ping me on
+### Ping me on
 
 - [GitHub]({{github}}/)
 - [Discord]({{discord}})
