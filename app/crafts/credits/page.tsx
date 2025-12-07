@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./credits.module.css";
 
-const AUTHOR = "Hugh Fabre";
+const AUTHOR = "Me";
 const HOLD_DURATION_MS = 1000;
 const BGM_URL =
   "https://g5lp1abfa6.ufs.sh/f/6KdjywPidJK33uNREcj6KjiQksDnAFZvclewtRL42uTIG8YJ";
