@@ -12,7 +12,7 @@ I'm a **{{age}} y/o web developer** living in **Tokyo**. It's **{{time}}** right
 
 I'm half **Aussie** and half **Japanese**, a bilingual. So I can do some **localization jobs**.
 
-I mostly work with [[[Next.js::https://g5lp1abfa6.ufs.sh/f/6KdjywPidJK3XJJJdFfmu5j7rLByRbVMZEd0FYvhlzk6i1JA]]](https://nextjs.org/) , [[[Tailwind CSS::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/tailwindcss.svg]]](https://tailwindcss.com/) and [[[TypeScript::https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/typescript.svg]]](https://www.typescriptlang.org/).
+I mostly work with [[[Next.js::https://raw.githubusercontent.com/pheralb/svgl/refs/heads/main/static/library/nextjs_icon_dark.svg]]](https://nextjs.org/) , [[[Tanstack::https://raw.githubusercontent.com/pheralb/svgl/refs/heads/main/static/library/tanstack.svg]]](https://tanstack.com/), [[[Tailwind CSS::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/tailwindcss.svg]]](https://tailwindcss.com/) and [[[TypeScript::https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/typescript.svg]]](https://www.typescriptlang.org/).
 
 I like to dabble in backend development with [[[Rust::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/rust.svg]]](https://rust-lang.org/) , [[[Go::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/go.svg]]](https://go.dev/) , [[[PHP::https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/refs/heads/main/icons/php.svg]]](https://php.net/).
 
